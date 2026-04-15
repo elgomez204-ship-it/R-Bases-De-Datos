@@ -1,0 +1,11 @@
+Introducción
+Este proyecto consiste en el desarrollo de un sistema de gestión de videojuegos basado en una base de datos relacional creada en MySQL y una aplicación web programada en PHP. Su finalidad es permitir almacenar, consultar y administrar información de distintos videojuegos de manera organizada. Para ello se ha creado una base de datos llamada videojuegos2526, que contiene una tabla donde se guardan datos como el título, el estudio, la plataforma, el año de lanzamiento, el presupuesto y la página web oficial.
+
+Aspectos técnicos
+A nivel técnico, el sistema utiliza sentencias SQL como CREATE DATABASE, CREATE TABLE, INSERT, SELECT y DELETE para gestionar la información almacenada. La base de datos está configurada con codificación UTF8MB4 para soportar caracteres especiales y una colación Unicode que mejora la compatibilidad del texto. Además, se crea un usuario específico con permisos limitados en MySQL para controlar el acceso. En el desarrollo web, PHP se conecta a la base de datos mediante mysqli, ejecutando consultas dinámicas que permiten insertar, mostrar y eliminar registros directamente desde la interfaz.
+
+Para qué sirve
+Este sistema sirve como una aplicación CRUD (crear, leer y eliminar datos) para gestionar una colección de videojuegos de forma sencilla. Permite añadir nuevos juegos mediante un formulario, visualizarlos en una tabla generada automáticamente desde la base de datos y eliminarlos mediante acciones directas en la interfaz. De esta forma, se facilita la administración de información sin necesidad de acceder manualmente a la base de datos, integrando todo en una única página web funcional.
+
+Conclusión
+En conclusión, este proyecto demuestra la integración entre bases de datos y desarrollo web utilizando PHP y MySQL. Permite comprender conceptos clave como la conexión a bases de datos, la ejecución de consultas SQL y la gestión dinámica de datos. Además, sirve como base para proyectos más avanzados, ya que se puede ampliar con funcionalidades como edición de registros, validación de formularios o mejoras de seguridad para hacer la aplicación más completa y profesional.
