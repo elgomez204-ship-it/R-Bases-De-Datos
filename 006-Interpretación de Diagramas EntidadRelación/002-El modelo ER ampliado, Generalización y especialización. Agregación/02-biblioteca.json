@@ -1,0 +1,45 @@
+{
+  "formas": [
+    {
+      "id": "usuario",
+      "tipo": "entity",
+      "left": "40px",
+      "top": "150px",
+      "entityName": "Usuario",
+      "properties": [
+        {"name": "id"},
+        {"name": "nombre"},
+        {"name": "email"}
+      ]
+    },
+    {
+      "id": "libro",
+      "tipo": "entity",
+      "left": "320px",
+      "top": "50px",
+      "entityName": "Libro",
+      "properties": [
+        {"name": "id"},
+        {"name": "titulo"},
+        {"name": "autor"}
+      ]
+    },
+    {
+      "id": "prestamo",
+      "tipo": "entity",
+      "left": "320px",
+      "top": "220px",
+      "entityName": "Prestamo",
+      "properties": [
+        {"name": "id"},
+        {"name": "fecha_prestamo"},
+        {"name": "usuario_id"},
+        {"name": "libro_id"}
+      ]
+    }
+  ],
+  "flechas": [
+    {"desde": "usuario", "hasta": "prestamo"},
+    {"desde": "libro", "hasta": "prestamo"}
+  ]
+}

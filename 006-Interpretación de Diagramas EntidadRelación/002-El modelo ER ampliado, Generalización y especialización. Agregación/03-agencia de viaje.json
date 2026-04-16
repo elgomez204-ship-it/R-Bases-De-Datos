@@ -1,0 +1,28 @@
+{
+  "formas": [
+    {
+      "id": "c1",
+      "tipo": "entity",
+      "entityName": "Cliente",
+      "properties": ["id", "nombre", "email"]
+    },
+    {
+      "id": "r1",
+      "tipo": "entity",
+      "entityName": "Reserva",
+      "properties": ["id", "fecha", "cliente_id"]
+    },
+    {
+      "id": "d1",
+      "tipo": "entity",
+      "entityName": "DetalleReserva",
+      "properties": ["id", "reserva_id", "viaje_id"]
+    },
+    {
+      "id": "v1",
+      "tipo": "entity",
+      "entityName": "Viaje",
+      "properties": ["id", "destino", "precio"]
+    }
+  ]
+}

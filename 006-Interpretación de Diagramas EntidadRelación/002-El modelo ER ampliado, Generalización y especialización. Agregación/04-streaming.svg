@@ -1,0 +1,28 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Usuario -->
+<rect x="250" y="40" width="220" height="150" fill="white" stroke="black"></rect>
+<text x="360" y="60" text-anchor="middle">Usuario</text>
+<text x="260" y="90">id</text>
+<text x="260" y="110">email</text>
+<text x="260" y="130">password</text>
+<text x="260" y="150">plan</text>
+
+<!-- Película -->
+<rect x="40" y="230" width="220" height="80" fill="white" stroke="black"></rect>
+<text x="150" y="260" text-anchor="middle">Película</text>
+
+<!-- Serie -->
+<rect x="270" y="230" width="220" height="80" fill="white" stroke="black"></rect>
+<text x="380" y="260" text-anchor="middle">Serie</text>
+
+<!-- Documental -->
+<rect x="510" y="230" width="220" height="80" fill="white" stroke="black"></rect>
+<text x="620" y="260" text-anchor="middle">Documental</text>
+
+<!-- Flechas -->
+<line x1="350" y1="190" x2="150" y2="230" stroke="black"></line>
+<line x1="350" y1="190" x2="380" y2="230" stroke="black"></line>
+<line x1="350" y1="190" x2="620" y2="230" stroke="black"></line>
+
+</svg>

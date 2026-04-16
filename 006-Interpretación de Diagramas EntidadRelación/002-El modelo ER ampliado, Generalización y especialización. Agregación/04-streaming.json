@@ -1,0 +1,33 @@
+{
+  "formas": [
+    {
+      "id": "forma-1",
+      "tipo": "entity",
+      "entityName": "Usuario",
+      "properties": ["id", "email", "password", "plan"]
+    },
+    {
+      "id": "forma-2",
+      "tipo": "entity",
+      "entityName": "Película",
+      "properties": ["id"]
+    },
+    {
+      "id": "forma-3",
+      "tipo": "entity",
+      "entityName": "Serie",
+      "properties": ["id"]
+    },
+    {
+      "id": "forma-4",
+      "tipo": "entity",
+      "entityName": "Documental",
+      "properties": ["id"]
+    }
+  ],
+  "relaciones": [
+    { "from": "Usuario", "to": "Película" },
+    { "from": "Usuario", "to": "Serie" },
+    { "from": "Usuario", "to": "Documental" }
+  ]
+}

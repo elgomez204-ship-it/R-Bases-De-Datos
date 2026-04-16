@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diagrama Biblioteca</title>
+<style>
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f3f3f7;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.page {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  width: 895.9249877929685px;
+  height: 418.1500040690103px;
+  overflow: visible;
+}
+
+/* formas básicas */
+.shape {
+  position: absolute;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 6px 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #9ca3af;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.shape.rectangle {
+  border-radius: 4px;
+}
+
+.shape.pill {
+  border-radius: 999px;
+}
+
+.shape.circle {
+  border-radius: 999px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  justify-content: center;
+}
+
+/* base de datos */
+.shape.db {
+  min-width: 120px;
+  min-height: 60px;
+  padding-top: 20px;
+  border-radius: 60px / 16px;
+  background: linear-gradient(180deg, #e5e7eb 0%, #ffffff 40%, #e5e7eb 100%);
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+.shape.db::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid #9ca3af;
+}
+.shape.db::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  height: 18px;
+  border-radius: 999px;
+}
+
+/* entidades ER */
+.shape.entity {
+  width: 220px;
+  min-height: 80px;
+  background: #ffffff;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  overflow: hidden;
+}
+.entity-header {
+  background: #f3f4f6;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+.entity-properties {
+  flex: 1;
+  padding: 4px;
+}
+.entity-property {
+  display: grid;
+  grid-template-columns: 14px 1fr 14px;
+  padding: 2px 0;
+}
+
+/* puertos */
+.port {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #111827;
+}
+.port-left { justify-self: start; }
+.port-right { justify-self: end; }
+
+/* flechas */
+.arrow {
+  position: absolute;
+  height: 2px;
+  background: #111827;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- SOCIO -->
+<div class="shape entity" style="left:329px;top:40px;width:220px;height:174px;">
+  <div class="entity-header">Socio</div>
+  <div class="entity-properties">
+    <div class="entity-property"><div class="port port-left"></div><div>id</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>nombre</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>apellidos</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>email</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>numero_socio</div><div class="port port-right"></div></div>
+  </div>
+</div>
+
+<!-- PRESTAMO -->
+<div class="shape entity" style="left:193px;top:252px;width:220px;height:126px;">
+  <div class="entity-header">Prestamo</div>
+  <div class="entity-properties">
+    <div class="entity-property"><div class="port port-left"></div><div>id</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>fecha_inicio</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>fecha_fin</div><div class="port port-right"></div></div>
+  </div>
+</div>
+
+<!-- LIBRO -->
+<div class="shape entity" style="left:477px;top:254px;width:220px;height:126px;">
+  <div class="entity-header">Libro</div>
+  <div class="entity-properties">
+    <div class="entity-property"><div class="port port-left"></div><div>id</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>titulo</div><div class="port port-right"></div></div>
+    <div class="entity-property"><div class="port port-left"></div><div>autor</div><div class="port port-right"></div></div>
+  </div>
+</div>
+
+<!-- OBJETOS -->
+<div class="shape rectangle" style="left:735px;top:282px;width:120px;height:40px;">Categoría</div>
+<div class="shape rectangle" style="left:40px;top:297px;width:120px;height:40px;">Editorial</div>
+
+<!-- FLECHAS -->
+<div class="arrow" style="left:376px;top:214px;width:46px;"></div>
+<div class="arrow" style="left:511px;top:214px;width:52px;"></div>
+<div class="arrow" style="left:697px;top:304px;width:38px;"></div>
+<div class="arrow" style="left:193px;top:316px;width:33px;"></div>
+
+</div>
+</body>
+</html>

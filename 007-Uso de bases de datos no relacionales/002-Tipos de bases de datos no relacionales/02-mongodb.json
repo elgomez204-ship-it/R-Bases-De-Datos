@@ -1,0 +1,36 @@
+Listado de facturas:
+db["facturas"].find()
+
+Insertar un elemento:
+db.facturas.insertOne({
+    nombre:"Juan",
+    apellidos:"Patino",
+    telefono:"+34 627577066",
+    email:"info@juan.com"
+})
+
+Insertar muchos elementos:
+db.facturas.insertMany(
+    [
+        {
+            nombre:"Enrique",
+            apellidos:"Garcia",
+            telefono:"+34 623254325",
+            email:"info@enrique.com"
+        },
+        {
+            nombre:"Alberto",
+            apellidos:"Lopez",
+            telefono:"+34 654425325",
+            email:"info@alberto.com"
+        },
+        {
+            nombre:"Juliana",
+            apellidos:"Martinez",
+            telefono:"+34 634535245",
+            email:"info@juliana.com"
+        }
+    ]
+)
+
+Borrar pantalla: cls

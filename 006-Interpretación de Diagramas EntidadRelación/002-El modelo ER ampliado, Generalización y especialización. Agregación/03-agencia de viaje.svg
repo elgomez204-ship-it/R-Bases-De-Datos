@@ -1,0 +1,36 @@
+<svg width="900" height="420" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Cliente -->
+<rect x="40" y="40" width="200" height="120" fill="white" stroke="black"></rect>
+<text x="60" y="60">Cliente</text>
+<text x="60" y="80">id</text>
+<text x="60" y="100">nombre</text>
+<text x="60" y="120">email</text>
+
+<!-- Reserva -->
+<rect x="320" y="40" width="200" height="120" fill="white" stroke="black"></rect>
+<text x="340" y="60">Reserva</text>
+<text x="340" y="80">id</text>
+<text x="340" y="100">fecha</text>
+<text x="340" y="120">cliente_id</text>
+
+<!-- Detalle -->
+<rect x="600" y="120" width="200" height="120" fill="white" stroke="black"></rect>
+<text x="620" y="140">DetalleReserva</text>
+<text x="620" y="160">id</text>
+<text x="620" y="180">reserva_id</text>
+<text x="620" y="200">viaje_id</text>
+
+<!-- Viaje -->
+<rect x="320" y="260" width="200" height="120" fill="white" stroke="black"></rect>
+<text x="340" y="280">Viaje</text>
+<text x="340" y="300">id</text>
+<text x="340" y="320">destino</text>
+<text x="340" y="340">precio</text>
+
+<!-- Líneas -->
+<line x1="240" y1="90" x2="320" y2="90" stroke="black"></line>
+<line x1="520" y1="90" x2="600" y2="140" stroke="black"></line>
+<line x1="520" y1="320" x2="600" y2="200" stroke="black"></line>
+
+</svg>

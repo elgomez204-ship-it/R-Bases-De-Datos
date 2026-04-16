@@ -1,0 +1,14 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+
+<rect x="120" y="60" width="220" height="160" fill="white" stroke="black"></rect>
+
+<rect x="120" y="60" width="220" height="30" fill="#eee" stroke="black"></rect>
+<text x="230" y="80" text-anchor="middle" font-size="14">Usuarios</text>
+
+<text x="130" y="110" font-size="12">id (PK)</text>
+<text x="130" y="130" font-size="12">nombre</text>
+<text x="130" y="150" font-size="12">apellidos</text>
+<text x="130" y="170" font-size="12">email</text>
+<text x="130" y="190" font-size="12">direccion</text>
+
+</svg>

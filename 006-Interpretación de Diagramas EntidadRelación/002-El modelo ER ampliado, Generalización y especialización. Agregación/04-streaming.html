@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diagrama exportado</title>
+<style>
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f3f3f7;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.page {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  width: 774.3874931335446px;
+  height: 352.38752365112293px;
+  overflow: visible;
+}
+
+/* (todo el CSS EXACTO igual que tu ejemplo) */
+.shape {
+  position: absolute;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 6px 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #9ca3af;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.shape.entity {
+  width: 220px;
+  min-height: 80px;
+  background: #ffffff;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+
+.entity-header {
+  background: #f3f4f6;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.entity-property {
+  display: grid;
+  grid-template-columns: 14px 1fr 14px;
+  padding: 2px 0;
+}
+
+.port {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #111827;
+}
+
+.arrow {
+  position: absolute;
+  height: 2px;
+  background: #111827;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 8px solid #111827;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- Usuario -->
+<div class="shape entity" style="left:249px;top:40px;width:220px;height:150px;">
+  <div class="entity-header">Usuario</div>
+  <div class="entity-properties">
+    <div class="entity-property"><div class="port"></div><div>id</div><div class="port"></div></div>
+    <div class="entity-property"><div class="port"></div><div>email</div><div class="port"></div></div>
+    <div class="entity-property"><div class="port"></div><div>password</div><div class="port"></div></div>
+    <div class="entity-property"><div class="port"></div><div>plan</div><div class="port"></div></div>
+  </div>
+</div>
+
+<!-- Película -->
+<div class="shape entity" style="left:40px;top:232px;width:220px;height:80px;">
+  <div class="entity-header">Película</div>
+  <div class="entity-properties">
+    <div class="entity-property"><div class="port"></div><div>id</div><div class="port"></div></div>
+  </div>
+</div>
+
+<!-- Serie -->
+<div class="shape entity" style="left:273px;top:232px;width:220px;height:80px;">
+  <div class="entity-header">Serie</div>
+  <div class="entity-properties">
+    <div class="entity-property"><div class="port"></div><div>id</div><div class="port"></div></div>
+  </div>
+</div>
+
+<!-- Documental -->
+<div class="shape entity" style="left:514px;top:225px;width:220px;height:80px;">
+  <div class="entity-header">Documental</div>
+  <div class="entity-properties">
+    <div class="entity-property"><div class="port"></div><div>id</div><div class="port"></div></div>
+  </div>
+</div>
+
+<!-- Flechas -->
+<div class="arrow" style="left:260px;top:190px;width:70px;transform:rotate(2.5rad);"></div>
+<div class="arrow" style="left:370px;top:190px;width:42px;transform:rotate(1.4rad);"></div>
+<div class="arrow" style="left:470px;top:180px;width:96px;transform:rotate(0.5rad);"></div>
+
+</div>
+</body>
+</html>

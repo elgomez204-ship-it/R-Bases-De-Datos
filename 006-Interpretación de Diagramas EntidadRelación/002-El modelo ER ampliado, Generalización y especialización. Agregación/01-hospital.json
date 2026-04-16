@@ -1,0 +1,66 @@
+{
+  "formas": [
+    {
+      "id": "paciente",
+      "tipo": "entity",
+      "left": "50px",
+      "top": "100px",
+      "entityName": "Paciente",
+      "properties": [
+        {"name": "id"},
+        {"name": "nombre"},
+        {"name": "apellidos"}
+      ]
+    },
+    {
+      "id": "medico",
+      "tipo": "entity",
+      "left": "300px",
+      "top": "50px",
+      "entityName": "Médico",
+      "properties": [
+        {"name": "id"},
+        {"name": "nombre"},
+        {"name": "especialidad"}
+      ]
+    },
+    {
+      "id": "cita",
+      "tipo": "entity",
+      "left": "300px",
+      "top": "180px",
+      "entityName": "Cita",
+      "properties": [
+        {"name": "id"},
+        {"name": "fecha"},
+        {"name": "paciente_id"},
+        {"name": "medico_id"}
+      ]
+    },
+    {
+      "id": "tratamiento",
+      "tipo": "entity",
+      "left": "550px",
+      "top": "120px",
+      "entityName": "Tratamiento",
+      "properties": [
+        {"name": "id"},
+        {"name": "nombre"}
+      ]
+    }
+  ],
+  "flechas": [
+    {
+      "desde": "paciente",
+      "hasta": "cita"
+    },
+    {
+      "desde": "medico",
+      "hasta": "cita"
+    },
+    {
+      "desde": "cita",
+      "hasta": "tratamiento"
+    }
+  ]
+}

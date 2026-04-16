@@ -1,0 +1,36 @@
+<svg width="800" height="350" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+.entity { fill:white; stroke:black; stroke-width:2; }
+.text { font-size:12px; text-anchor:middle; }
+.title { font-weight:bold; }
+.line { stroke:black; stroke-width:2; }
+</style>
+
+<!-- Usuario -->
+<rect class="entity" x="50" y="150" width="180" height="100"></rect>
+<text class="title text" x="140" y="170">Usuario</text>
+<text class="text" x="140" y="190">id</text>
+<text class="text" x="140" y="205">nombre</text>
+<text class="text" x="140" y="220">email</text>
+
+<!-- Libro -->
+<rect class="entity" x="320" y="50" width="180" height="100"></rect>
+<text class="title text" x="410" y="70">Libro</text>
+<text class="text" x="410" y="90">id</text>
+<text class="text" x="410" y="105">titulo</text>
+<text class="text" x="410" y="120">autor</text>
+
+<!-- Prestamo -->
+<rect class="entity" x="320" y="220" width="180" height="110"></rect>
+<text class="title text" x="410" y="240">Prestamo</text>
+<text class="text" x="410" y="260">id</text>
+<text class="text" x="410" y="275">fecha_prestamo</text>
+<text class="text" x="410" y="290">usuario_id</text>
+<text class="text" x="410" y="305">libro_id</text>
+
+<!-- Relaciones -->
+<line class="line" x1="230" y1="200" x2="320" y2="260"></line>
+<line class="line" x1="500" y1="100" x2="410" y2="220"></line>
+
+</svg>
